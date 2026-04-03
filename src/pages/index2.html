@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentStack | Master Programming</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<h1>Student<span>Stack</span></h1>
+<p>Your premium gateway to coding mastery.</p>
+<button onclick="toggleTheme()">🌙 Toggle Theme</button>
+</header>
+
+<main>
+
+<!-- CATEGORY SECTION -->
+<section id="category-section" class="course-grid">
+
+<div class="course-card" onclick="showCategory('frontend')">
+💻 Frontend
+</div>
+
+<div class="course-card" onclick="showCategory('backend')">
+🖥 Backend
+</div>
+
+<div class="course-card" onclick="showCategory('programming')">
+🧠 Programming
+</div>
+
+<div class="course-card" onclick="showCategory('database')">
+🗄 Database
+</div>
+
+</section>
+
+<!-- FRONTEND COURSES -->
+<section id="frontend-courses" class="course-grid" style="display:none;">
+<button class="back-btn" onclick="goBack()">⬅ Back to Categories</button>
+<div class="course-card" onclick="showCourse('HTML')">🌐 HTML</div>
+<div class="course-card" onclick="showCourse('CSS')">🎨 CSS</div>
+<div class="course-card" onclick="showCourse('JavaScript')">⚡ JavaScript</div>
+<div class="course-card" onclick="showCourse('TypeScript')">📘 TypeScript</div>
+</section>
+
+<!-- BACKEND COURSES -->
+<section id="backend-courses" class="course-grid" style="display:none;">
+<button class="back-btn" onclick="goBack()">⬅ Back to Categories</button>
+<div class="course-card" onclick="showCourse('Python')">🐍 Python</div>
+<div class="course-card" onclick="showCourse('Java')">☕ Java</div>
+<div class="course-card" onclick="showCourse('PHP')">🐘 PHP</div>
+<div class="course-card" onclick="showCourse('Ruby')">💎 Ruby</div>
+<div class="course-card" onclick="showCourse('Go')">🚀 GoLang</div>
+<div class="course-card" onclick="showCourse('NodeJS')">🟢 NodeJS</div>
+<div class="course-card" onclick="showCourse('SQL')">📊 SQL</div>
+</section>
+
+<!-- PROGRAMMING COURSES -->
+<section id="programming-courses" class="course-grid" style="display:none;">
+<button class="back-btn" onclick="goBack()">⬅ Back to Categories</button>
+<div class="course-card" onclick="showCourse('C')">🔵 C</div>
+<div class="course-card" onclick="showCourse('C++')">⚙ C++</div>
+<div class="course-card" onclick="showCourse('C#')">🎯 C#</div>
+<div class="course-card" onclick="showCourse('Go')">🚀 GoLang</div>
+</section>
+
+<!-- DATABASE COURSES -->
+<section id="database-courses" class="course-grid" style="display:none;">
+<button class="back-btn" onclick="goBack()">⬅ Back to Categories</button>
+<div class="course-card" onclick="showCourse('SQL')">📊 SQL</div>
+<div class="course-card" onclick="showCourse('Bash')">🖥 Bash</div>
+</section>
+
+</main>
+
+
+<script src="script.js"></script>
+<script src="Terminal.js"></script>
+
+</body>
+</html>
