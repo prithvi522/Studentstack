@@ -39,7 +39,7 @@ export default function Index() {
   };
 
   const showCourse = (course: string) => {
-    window.open(`/course?course=${encodeURIComponent(course)}`, "_blank");
+    window.open(`/#/course?course=${encodeURIComponent(course)}`, "_blank");
   };
 
   return (
