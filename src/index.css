@@ -81,15 +81,6 @@ body {
   .font-mono {
     font-family: 'JetBrains Mono', monospace;
   }
-  .gradient-primary {
-    background: linear-gradient(135deg, hsl(160 84% 39%), hsl(170 70% 45%));
-  }
-  .gradient-dark {
-    background: linear-gradient(135deg, hsl(220 25% 8%), hsl(220 30% 14%));
-  }
-.glow-primary {
-    box-shadow: 0 0 30px -5px hsl(160 84% 39% / 0.3);
-  }
 }
 
 @keyframes drift {
