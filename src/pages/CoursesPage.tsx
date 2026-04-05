@@ -61,11 +61,11 @@ export default function CoursesPage() {
                   Practical lessons, notes, and exercises arranged to help you build real understanding rather than skim concepts.
                 </p>
                 <Link
-                  to="/terminal"
+                  to={`/course?course=${encodeURIComponent(course.title)}`}
                   className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-5 py-3 font-semibold text-white shadow-lg shadow-slate-900/15 transition hover:translate-y-[-1px] dark:bg-white dark:text-slate-950"
                 >
                   <Play className="h-4 w-4" />
-                  Start Learning
+                  Open Course
                 </Link>
               </div>
             ))}

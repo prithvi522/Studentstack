@@ -95,7 +95,7 @@ export default function CoursePage() {
       <main className="relative z-10">
         <section className="mx-auto grid max-w-7xl gap-8 px-4 pb-12 pt-8 sm:px-6 lg:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.9fr)] lg:px-8">
           <div className="space-y-8">
-            <div className="course-panel overflow-hidden rounded-[28px] p-4 sm:p-6">
+            <div id="course-video" className="course-panel overflow-hidden rounded-[28px] p-4 sm:p-6">
               <div className="mb-4 flex items-center justify-between gap-3">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-emerald-600 dark:text-emerald-300">
@@ -108,11 +108,20 @@ export default function CoursePage() {
                 </div>
               </div>
 
+              <div className="mb-4 flex flex-wrap gap-3 lg:hidden">
+                <a
+                  href="#practice-terminal"
+                  className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:translate-y-[-1px] dark:bg-white dark:text-slate-950"
+                >
+                  Open Terminal
+                </a>
+              </div>
+
               {videos[courseName] ? (
                 <div className="video-frame">
                   <iframe
                     src={videos[courseName]}
-                    className="h-[260px] w-full rounded-[22px] border-0 shadow-xl sm:h-[360px] lg:h-[420px]"
+                    className="course-video h-[260px] w-full rounded-[22px] border-0 shadow-xl sm:h-[360px] lg:h-[420px]"
                     allowFullScreen
                     title={`${courseName} video`}
                   ></iframe>
@@ -145,7 +154,7 @@ export default function CoursePage() {
           </div>
 
           <aside className="lg:sticky lg:top-6 lg:self-start">
-            <div className="course-panel rounded-[28px] p-4 sm:p-5">
+            <div id="practice-terminal" className="course-panel rounded-[28px] p-4 sm:p-5">
               <div className="mb-4 flex items-center justify-between gap-3">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-violet-600 dark:text-violet-300">
