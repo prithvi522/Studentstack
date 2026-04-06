@@ -108,15 +108,6 @@ export default function CoursePage() {
                 </div>
               </div>
 
-              <div className="mb-4 flex flex-wrap gap-3 lg:hidden">
-                <a
-                  href="#practice-terminal"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:translate-y-[-1px] dark:bg-white dark:text-slate-950"
-                >
-                  Open Terminal
-                </a>
-              </div>
-
               {videos[courseName] ? (
                 <div className="video-frame">
                   <iframe
